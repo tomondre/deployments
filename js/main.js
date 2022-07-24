@@ -1,14 +1,14 @@
 const deployments = [
     {
-        name: 'Is OK',
-        createdOn: '20.07.2022',
-        description: 'Super simple app that returns liveness of a server',
-        url: 'https://is-ok.tomondre.com'
-    }, {
         name: 'Deployments',
         createdOn: '23.07.2022',
-        description: 'Fronted app with deployments information',
+        description: 'Fronted app with deployments informationFronted app with deployments informationFronted app with deployments information',
         url: 'https://deployments.tomondre.com'
+    }, {
+        name: 'Is OK',
+        createdOn: '23.07.2022',
+        description: 'Super simple app that liveness of a server',
+        url: 'https://is-ok.tomondre.com'
     }, {
         name: 'Url Shortener',
         createdOn: '20.07.2022',
@@ -42,7 +42,7 @@ deployments.forEach(deployment => {
             <td class="td-created-on">${deployment.createdOn}</td>
             <td class="td-description">${deployment.description}</td>
             <td class="td-url"><a href="${deployment.url}" target="_blank">${deployment.url.replace(/^https?:\/\//, '')}</a></td>
-            <td class="status"><span class="waiting">Loading</span></td>
+            <td class="status" style="padding: 0;"><span class="waiting">Loading</span></td>
         </tr>
 		`));
     $('tbody').append(tableElements)
