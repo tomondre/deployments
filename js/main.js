@@ -2,22 +2,39 @@ const deployments = [
     {
         name: 'Deployments',
         createdOn: '23.07.2022',
-        description: 'Fronted app with deployments informationFronted app with deployments informationFronted app with deployments information',
+        description: 'Frontend app with information about deployments and its status',
         url: 'https://deployments.tomondre.com'
     }, {
         name: 'Is OK',
         createdOn: '23.07.2022',
         description: 'Super simple app that liveness of a server',
         url: 'https://is-ok.tomondre.com'
+
+    }, {
+        name: 'Cloud',
+        createdOn: '20.07.2022',
+        description: 'Nextcloud instance that provides access to the cloud storage',
+        url: 'https://cloud.tomondre.com'
+
     }, {
         name: 'Url Shortener',
         createdOn: '20.07.2022',
         description: 'APP that let you shorten urls',
         url: 'https://url.tomondre.com'
     }, {
+        name: 'Traefik Dashboard',
+        createdOn: '17.05.2022',
+        description: 'Traefik dashboard exposed on the internet with "Basic" HTTP authentication',
+        url: 'https://traefik.tomondre.com'
+    }, {
+        name: 'Kubernetes Dashboard',
+        createdOn: '17.05.2022',
+        description: 'Kubernetes dashboard',
+        url: 'https://kubernetes.tomondre.com'
+    }, {
         name: 'Portfolio',
-        createdOn: '20.05.2022',
-        description: 'Portfolio website with info about me and my work',
+        createdOn: '15.05.2022',
+        description: 'Portfolio website with information about me and my work',
         url: 'https://portfolio.tomondre.com'
     }, {
         name: 'Lego Scraper',
