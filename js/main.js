@@ -54,7 +54,7 @@ $.ajax({
         function checkDeploymentStatuses() {
             deployments.forEach(deployment => {
                 $.ajax({
-                    url: statusCheckUrl + '?url=' + deployment.url,
+                    url: statusCheckUrl + '?url=' + deployment.healthUrl,
                     type: 'GET',
                     success: () => setActiveStatus(deployment.name),
                     error: () => setInactiveStatus(deployment.name)
