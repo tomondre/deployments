@@ -1,3 +1,13 @@
+terraform {
+  cloud {
+    organization = "raspberry-kubernetes-cluster"
+
+    workspaces {
+      tags = ["tomondre-deployments-website"]
+    }
+  }
+}
+
 module "deployments_overview_page" {
   source            = "git::https://github.com/tomondre/raspberry-kubernetes-cluster.git//terraform-modules/reusable-modules/full-deployment"
   health_check_path = "/"
