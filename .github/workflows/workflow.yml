@@ -1,6 +1,11 @@
 name: Tomondre's portfolio webpage
 run-name: CI & CD worfklows for the Kubernetes deplyment 🚀
-on: [push]
+on: 
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+  
 jobs:
   CI:
     runs-on: ubuntu-latest
